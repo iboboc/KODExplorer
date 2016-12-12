@@ -7,7 +7,6 @@ $L= array(
 	"upload_exist_rename"  		=>"重新命名",
 	"upload_exist_replace"  	=>"覆蓋",
 	"upload_exist_skip"  		=>"略過",
-
 	"more"  			  		=>"更多",
 	'system_setting'  			=>"系統設定",
 	"openProject"  			  	=>"編輯器開啟項目",
@@ -21,7 +20,6 @@ $L= array(
 	"explorerNew"  			  	=>'KOD連結',
 	'zip_download_ready'  		=>'壓縮後會自動下載,請稍後...',
 	"set_background"  			=>"設定為桌面桌布",
-
 	"share"  			  	  	=>"共用",
 	"share_path"				=>"共用路径",
 	"share_title"  			  	=>"資源共用",
@@ -66,7 +64,6 @@ $L= array(
 	"unknow_file_office"  		=>"Office預覽,此程式需要部署在外部網路",
 	"config_save_error_auth"	=> '設定儲存失敗,管理員禁止了此權限!',
 	"config_save_error_file"	=> '設定儲存失敗,KOD目錄需要有寫入權限!',
-
 	//editor
 	"shortcut"  			  	=> '快速鍵',
 	"learnMore"  			  	=> '了解更多',
@@ -82,7 +79,6 @@ $L= array(
 	"not_exists"  				=> "不存在",
 	"group_role_fileDownload"	=> "檔案下載",
 	"group_role_share"  		=> "共用",
-
 	"system_setting"  			=> "系統設定",
 	"system_setting_menu"  		=> "選單管理",
 	"system_name"  				=> "程式名稱",
@@ -109,7 +105,6 @@ $L= array(
 	"url_path_desc"  			=>"URL網址或JS代碼",
 	"no_permission_read"  		=>"此檔案無讀取權限",
 	"no_permission_download"  	=>"管理員限制了下載與預覽！",
-
 	
 	"php_env_check"  			=> "執行環境檢查:",
 	"php_env_error"  			=> "環境錯誤:",
@@ -123,7 +118,6 @@ $L= array(
 	"install_login"  			=>"您可以用如下帳號登陸",
 	"install_enter"  			=>"進入系統",
 	"install_user_default"  	=>"管理員：admin/admin(請務必修改密碼)<br/>一般使用者：demo/demo<br/>遊客使用者：guest/guest",
-
 	"copyright_desc"  			=>"這是一款備受好評的web檔案管理系統，你可以用它來做內部檔案管理或共用、也可以用來管理伺服器上的網站，取代Ftp
 		，甚至可以當作webIDE直接線上開發。同時你也可以將此程式二次開發整合進你現有的系統。",
 	'copyright_contact'  			=>'授權或客製請聯絡QQ:<a href="http://wpa.qq.com/msgrd?v=3&uin=3232048103&site=qq&menu=yes" target="_blank">3232048103</a><a href="javascript:core.openIE(\'http://kalcaddle.com/qa.html\');">問題反饋</a>',
@@ -133,8 +127,6 @@ $L= array(
 	"kod_name_desc"  			=> "芒果雲•資源管理器",
 	"kod_power_by"  			=> " - Powered by KodExplorer",
 	"kod_name_copyright"  		=> "芒果雲•資源管理器",
-
-
 	"login"                      =>	"登入",
 	"guest_login"                =>	"遊客登入",	
 	"username"                   =>	"使用者名稱",
@@ -156,7 +148,6 @@ $L= array(
 	"dialog_min_all"             =>	"最小化所有",	
 	"dialog_display_all"         =>	"顯示所有視窗",
 	"dialog_close_all"           =>	"關閉所有視窗",	
-
 	//通用
 	"open"                       =>	"開啟",
 	"others"					 => "其他",
@@ -191,7 +182,6 @@ $L= array(
 	"time_type"                  =>	"Y/m/d H:i:s",
 	"time_type_info"             =>	"Y年m月d日 H:i:s",
 	"public_path"           	 =>	"公共目錄",
-
 	//右鍵
 	"file"                       =>	"檔案",
 	"folder"                     =>	"資料夾",
@@ -221,7 +211,6 @@ $L= array(
 	"unzip"                      =>	"zip解壓至目前",
 	"clipboard"                  =>	"檢視剪貼簿", 
 	"full_screen"                =>	"全螢幕/離開全螢幕",	
-
 	"tips"                       =>	"提示",
 	"ziping"                     =>	"正在壓縮...",
 	"unziping"                   =>	"正在解壓...",
@@ -245,7 +234,6 @@ $L= array(
 	"app_group_music"			 => '音樂',
 	"app_group_life"			 => '生活',
 	"app_group_others"			 => '其他',
-
 	"app_desc"			 		 => '描述',
 	"app_icon"			 		 => '應用程式圖示',
 	"app_icon_show"				 => 'URL網址或此目錄',
@@ -257,9 +245,8 @@ $L= array(
 	"app_display_border"		 => '無邊框(選中即無邊框)',	
 	"app_display_size"			 => '調整大小(選中即可調整)',		
 	"app_size"			 		 => '大小',
-	"app_url"			 		 => '連結網址,
+	"app_url"			 		 => '連結網址',
 	"app_code"			 		 => 'JS代碼',
-
 	//檔案管理
 	"edit"                       =>	"編輯",
 	"edit_can_not"               =>	"不是文字檔案", 
@@ -280,7 +267,6 @@ $L= array(
 	"double_click_rename"        =>	"按兩下名稱重新命名",
 	"double_click_open"          =>	"按兩下開啟",
 	"path_null"                  =>	"此資料夾為空，可以拖曳檔案至此視窗上傳。",	
-
 	//上傳下載
 	"upload"                     =>	"上傳",
 	"upload_ready"               =>	"等待上傳...",
@@ -310,7 +296,6 @@ $L= array(
 	"download_from_server"       =>	"遠端下載",
 	"save_path"                  =>	"儲存路徑",
 	"upload_select_muti"         =>	"可選擇多個檔案上傳",
-
 	//搜尋
 	"search"                     =>	"搜尋",
 	"searching"                  =>	"搜尋中...",
@@ -324,7 +309,6 @@ $L= array(
 	"contain"                    =>	"包含",
 	"server_dwonload_desc"       =>	"個任務加入至下載清單",
 	"parent_permission"          => "父目錄權限",
-
 	"root_path"                  =>	"根目錄",
 	"lib"                        =>	"庫",
 	"fav"                        =>	"書籤",
@@ -337,7 +321,6 @@ $L= array(
 	"my_music"                   =>	"我的音樂",
 	"my_movie"                   =>	"我的影片",
 	"my_download"                =>	"我的下載",
-
 	//介面
 	"ui_desktop"                 =>	"桌面",
 	"ui_explorer"            	 =>	"檔案管理",
@@ -346,7 +329,6 @@ $L= array(
 	"ui_project_home"            =>	"專案主頁",
 	"ui_login"                   =>	"登入",
 	"ui_logout"                  =>	"登出",
-
 	//設定
 	"setting"                    =>	"系統設定", 	
 	"setting_title"              =>	"選項",     
@@ -372,7 +354,6 @@ $L= array(
 	"setting_success"            =>	"修改已生效！",
 	"can_not_repeat"             =>	"不允許重複",
 	"absolute_path"              =>	"絕對位址",
-
 	// setting page
 	"group"                      =>	"使用者群組",
 	"data_not_full"              =>	"資料送出不完整！",
@@ -426,7 +407,6 @@ $L= array(
 	"group_role_group_del"       =>	"刪除使用者群組",
 	"group_role_ext_warning"     =>	"不允許此類檔案的上傳,<br/>重新命名(重新命名為指定副檔名),<br/>編輯儲存,遠端下載,解壓",
 	"group_tips"=>"<li>1.使用者群組名稱不能重複，修改群組名稱後原屬於改群組使用者會自動關聯</li><li>2.副檔名限制關聯系統安全性，請務必謹慎作業<i>(如果在web目錄下新增php;就意味著改程式的權限對此使用者形同虛設)</i></li><li>3.使用者管理、權限群組管理；檢視權限和增刪改權限是連結的；程式會自動關聯</li><li>4.設定權限群組能新增權限群組後，後續權限是不繼承的<i>（此權限相當於最高權限）</i></li>",	
-
 	//explorer_ajax
 	"not_null"                   =>	"必填項不能為空!",
 	"picture_can_not_null"       =>	"圖片網址不能為空!",
@@ -454,7 +434,6 @@ $L= array(
 	"gotoline"                   =>	"跳轉至列",
 	"path_is_current"            =>	"所開啟路徑與目前路徑一致！",
 	"path_exists"                =>	"此名稱已存在！",
-
 	//編輯器
 	"undo"                       =>	"復原",
 	"redo"                       =>	"反復原",
@@ -465,7 +444,6 @@ $L= array(
 	"function_list"           	 =>	"函數清單",
 	"code_theme"                 =>	"代碼風格",
 	"font_size"                  =>	"字型",
-
 	//button
 	"button_ok"                  =>	"確定",
 	"button_submit"              =>	"送出",

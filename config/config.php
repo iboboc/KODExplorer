@@ -10,7 +10,7 @@
 @set_time_limit(600);//10min pathInfoMuti,search,upload,download... 
 @ini_set('session.cache_expire',600);
 @ini_set("display_errors","on");
-@error_reporting(E_ERROR|E_WARNING|E_PARSE);
+@error_reporting(E_ERROR|E_PARSE);
 //error_reporting(E_ALL);
 
 function P($path){return str_replace('\\','/',$path);}
@@ -105,7 +105,6 @@ if(isset($in['PHPSESSID'])){//office edit post
 }
 
 @session_start();
-check_post_many();
 session_write_close();//避免session锁定问题;之后要修改$_SESSION 需要先调用session_start()
 $config['autorun'] = array(
 	array('controller'=>'user','function'=>'loginCheck'),

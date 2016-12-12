@@ -145,7 +145,6 @@ function spend_time(&$pretime){
 } 
 
 function check_code($code){
-	header("Content-type: image/png");
 	$fontsize = 18;$len = strlen($code);
     $width = 70;$height=27;
     $im = @imagecreatetruecolor($width, $height) or die("create image error!");
@@ -162,11 +161,20 @@ function check_code($code){
     imagerectangle($im, 0, 0, $width-1, $height-1, $border_color);//画矩形，边框颜色200,200,200
 
     for ($i = 0; $i < $len; $i++) {//写入随机字串
-        $current = $str[mt_rand(0, strlen($str)-1)];
+        $current = $code[mt_rand(0, strlen($code)-1)];
         $text_color = imagecolorallocate($im,mt_rand(30, 140),mt_rand(30,140),mt_rand(30,140));
         imagechar($im,10,$i*$fontsize+6,rand(1,$height/3),$code[$i],$text_color);
     }
-    imagejpeg($im);//显示图
+    if(function_exists("imagejpeg")){
+		header("Content-Type: image/jpeg");
+		imagejpeg($im, null,90);//图片质量
+	}else if(function_exists("imagegif")){
+		header("Content-Type: image/gif");
+		imagegif($im);
+	}else if(function_exists("imagepng")){
+		header("Content-Type: image/x-png");
+		imagepng($im);
+	}
     imagedestroy($im);//销毁图片
 }
 
@@ -351,7 +359,7 @@ function show_json($data,$code = true,$info=''){
  * $tpl="<li class='list {this}' theme='{0}'>{1}_{2}</li>\n";
  * echo getTplList('|','=',$arr,$tpl,'mac'),'<br/>';
  */
-function getTplList($cute1, $cute2, $arraylist, $tpl,$this,$this_str=''){
+function getTplList($cute1, $cute2, $arraylist, $tpl,$this_tag,$this_str=''){
 	$list = explode($cute1, $arraylist);
 	if ($this_str == '') $this_str ="this";
 	$html = '';
@@ -361,7 +369,7 @@ function getTplList($cute1, $cute2, $arraylist, $tpl,$this,$this_str=''){
 		foreach ($info as $key => $value) {
 			$arr_replace[$key]='{'.$key .'}';
 		}
-		if ($info[0] == $this) {
+		if ($info[0] == $this_tag) {
 			$temp = str_replace($arr_replace, $info, $tpl);
 			$temp = str_replace('{this}', $this_str, $temp);
 		} else {
